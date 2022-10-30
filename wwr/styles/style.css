@@ -5,6 +5,7 @@
     color: #2B193D;
     background-color: antiquewhite;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-self: center;
 }
 #background {
     height: 725px;
@@ -17,12 +18,52 @@ body{
 header{
     background-color: #484D6D;
     font-family: fantasy;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
 }
 nav a:link{
-    background-color: antiquewhite;
     color: grey;
     font-family: fantasy;
 }
+#logo_link {
+    padding-top: 5px;
+    justify-self: right;
+    align-self: center;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+#hero-box {
+    grid-column: 2;
+    grid-row: 1/3;
+    z-index: -1;
+    margin-top: 150px;
+}
+#hero-msg h4 {
+    color: antiquewhite;
+}
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+.card-img, .Events{
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    justify-content: center;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
 
 .book, .join {
     background-color: #d9c2a3;
@@ -37,6 +78,7 @@ nav a:link{
     background-color: #d9c2a3;
     padding: 15px 30px;
     margin-top: 50px;
+    justify-content: center;
 }
 
 .msg{
@@ -51,7 +93,12 @@ footer{
     font-size:medium;
     text-align: left;
     font-family: fantasy;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 .icon{
     width: 80px;
