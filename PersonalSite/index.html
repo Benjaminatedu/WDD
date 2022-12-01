@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="styles/indexstyle.css">
+
 </head>
 
 <body>
@@ -13,16 +15,18 @@
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/logo.png" alt="B2D2 Logo">
         </a>
+    </header>
+    <div id="navigation">
         <nav>
             <a href="characters.html">Characters</a>
             <a href="locations.html">Locations</a>
             <a href="#">Contact Us</a>
         </nav>
-    </header>
+    </div>
 
     <div id="hero">
         <div id="hero-box">
-            <img id="hero-img" src="images/adventure-party.jpg" alt="D&D Characters on an Adventure">
+            <img id="hero-img" src="images/forest.jpg" alt="D&D Characters on an Adventure">
         </div>
         <section id="hero-msg">
             <h1 class="home-title">Explore This Fantasy World</h1>
@@ -34,29 +38,35 @@
     </div>
     <main class="home-grid">
         <section class="character-card">
-            <img class="card-img" src="images/party_of_adventurers_2.jpg" alt="characters">
-            <img class="icon" src="images/profile_icon.png" alt="profile icon">
             <h2>Characters</h2>
+            <a id="link" href="characters.html">
+                <img class="card-img" src="images/party_of_adventurers_2.jpg" alt="characters">
+            </a>
         </section>
         
         <section class="location-card">
-            <img class="card-img" src="images/faerun_map.jpg" alt="Map of Faerun">
-            <img class="icon" src="images/map_icon.png" alt="map icon">
             <h2>Locations</h2>
+            <a id="link" href="locations.html">    
+                <img class="card-img" src="images/faerun_map.jpg" alt="Map of Faerun">
+            </a>
         </section>
 
+        <div id="secondary-cards">
         <section class="items-card">
-            <img class="card-img" src="images/items.jpg" alt="treasure chest">
-            <img class="icon" src="images/item_icon.png" alt="item icon">
             <h2>Items</h2>
+            <a id="link" href="#">
+                <img class="card-img" src="images/items.jpg" alt="treasure chest">
+            </a>
         </section>
 
         <section class="homebrew-card">
-            <img class="card-img" src="images/homebrew.jpg" alt="treasure chest">
-            <img class="icon" src="images/homebrewicon.png" alt="item icon">
             <h2>Homebrew Submissions</h2>
+            <a id="link" href="#">    
+                <img class="card-img" src="images/homebrew.jpg" alt="treasure chest">
+            </a>
         </section>
-
+        </div>
+    </main>
     <footer>
         <p>B&B &copy; 2022 - Benjamin Bell</p>
         <p><a href="characters.html">Characters</a></p>
