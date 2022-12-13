@@ -1,15 +1,15 @@
 #content{
     max-width: 1600;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
     color: #2B193D;
     background-color:#2B193D;
     font-family: fantasy;
     justify-self: center;
 }
 body{
-    background-color: antiquewhite;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#2B193D;
+    font-family: fantasy;
 }
 header{
     background-color: #484D6D;
@@ -27,21 +27,23 @@ nav a:link{
     font-family: fantasy;
 }
 .logo{
-    width: 35%;
-    margin-right: auto;
+    width: 10%;
 }
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+    margin:auto;
     width: auto;
+    text-align: center;
+    border: 20px double #484D6D;
 }
 #hero-img{
-    border: 10px solid #484D6D; 
+    margin: auto;
+    border:10px double #484D6D;
 }
 #background{
     background-color: #484D6D;
-    border: 20px solid antiquewhite;
+    border: 20px double #2B193D;
 }
 
 #hero-box {
@@ -54,14 +56,14 @@ nav a:link{
 }
 #hero-msg{
     background-color: #d9c2a3;
-    color: black;
+    color: #2B193D;
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
-    border: 10px solid #484D6D;
+    border: 10px double #484D6D;
 }
 
-.container{
+.location{
     position: relative;
     width: 35%;
     margin: auto;
@@ -99,11 +101,11 @@ nav a:link{
     text-align: center;
   }
   
-  .container:hover .image {
+  .location:hover .image {
     opacity: 0.3;
   }
   
-  .container:hover .middle {
+  .location:hover .middle {
     opacity: 1;
   }
   
@@ -114,3 +116,15 @@ nav a:link{
     padding: 16px 32px;
     border: 10px double black;
   }
+  footer{
+    background-color:#d9c2a3;
+    color: #2B193D;
+    font-size:medium;
+    text-align: left;
+    font-family: fantasy;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 20px double #484D6D;
+}
