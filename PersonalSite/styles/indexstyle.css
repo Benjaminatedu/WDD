@@ -61,6 +61,11 @@ nav a:link{
     transform: scale(1.1);
 }
 
+.background1, .background2, .background3{
+    background-color: white;
+    width: 100%;
+}
+
 .book, .join {
     background-color: #d9c2a3;
     color: black;

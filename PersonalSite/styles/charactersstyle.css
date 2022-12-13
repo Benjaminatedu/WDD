@@ -4,9 +4,8 @@
     margin: 0 auto;
     color: #2B193D;
     background-color:#2B193D;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: fantasy;
     justify-self: center;
-    align-content: center;
 }
 body{
     background-color: antiquewhite;
@@ -26,26 +25,69 @@ nav{
 nav a:link{
     color: grey;
     font-family: fantasy;
-} 
-
-.home-grid{
-    align-items: center;
-    align-self: center;
-    align-content: center;
+}
+.logo{
+    width: 35%;
+    margin-right: auto;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    width: auto;
+}
+#hero-img{
+    border: 10px solid #484D6D; 
+}
+#background{
+    background-color: #484D6D;
+    border: 20px solid antiquewhite;
 }
 
-.container {
+#hero-box {
+    grid-column: 2;
+    grid-row: 1/3;
+    margin-top: 150px;
+}
+#hero-msg h4 {
+    background-color: antiquewhite;
+}
+#hero-msg{
+    background-color: #d9c2a3;
+    color: black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    border: 10px solid #484D6D;
+}
+
+.container{
     position: relative;
-    width: 50%;
-} 
-  .image {
+    width: 35%;
+    margin: auto;
+}
+.image {
     opacity: 1;
-    width: 50%;
+    display: block;
+    width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
   }
-  
+
+.image, .Events{
+    border: 10px solid antiquewhite;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px black;
+    justify-content: center;
+}
+
+.image:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
   .middle {
     transition: .5s ease;
     opacity: 0;
@@ -66,11 +108,9 @@ nav a:link{
   }
   
   .text {
-    font-family: fantasy;
-    border-style: double;
-    border-color: black;
-    background-color:antiquewhite;
+    background-color: antiquewhite;
     color:#2B193D;
     font-size: 16px;
     padding: 16px 32px;
+    border: 10px double black;
   }
