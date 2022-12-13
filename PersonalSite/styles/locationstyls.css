@@ -1,0 +1,116 @@
+#content{
+    max-width: 1600;
+    text-align: center;
+    margin: 0 auto;
+    color: #2B193D;
+    background-color:#2B193D;
+    font-family: fantasy;
+    justify-self: center;
+}
+body{
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-color: #484D6D;
+    font-family: fantasy;
+}
+nav{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #d9c2a3;
+}
+nav a:link{
+    color: grey;
+    font-family: fantasy;
+}
+.logo{
+    width: 35%;
+    margin-right: auto;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    width: auto;
+}
+#hero-img{
+    border: 10px solid #484D6D; 
+}
+#background{
+    background-color: #484D6D;
+    border: 20px solid antiquewhite;
+}
+
+#hero-box {
+    grid-column: 2;
+    grid-row: 1/3;
+    margin-top: 150px;
+}
+#hero-msg h4 {
+    background-color: antiquewhite;
+}
+#hero-msg{
+    background-color: #d9c2a3;
+    color: black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    border: 10px solid #484D6D;
+}
+
+.container{
+    position: relative;
+    width: 35%;
+    margin: auto;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+.image, .Events{
+    border: 10px solid antiquewhite;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px black;
+    justify-content: center;
+}
+
+.image:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: antiquewhite;
+    color:#2B193D;
+    font-size: 16px;
+    padding: 16px 32px;
+    border: 10px double black;
+  }
